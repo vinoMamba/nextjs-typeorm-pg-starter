@@ -6,7 +6,7 @@ export class createPosts1622639664724 implements MigrationInterface {
         await queryRunner.createTable(new Table({
             name: "posts",
             columns: [
-                {name: "id", type: "int", isPrimary: true, generationStrategy: "increment"},
+                {name: "id", type: "int", isPrimary: true, isGenerated: true, generationStrategy: "increment"},
                 {name: "title", type: "varchar"},
                 {name: "content", type: "text"}
             ]

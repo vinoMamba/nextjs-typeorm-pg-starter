@@ -37,6 +37,7 @@ var createPosts1622639664724 = /*#__PURE__*/function () {
                     name: "id",
                     type: "int",
                     isPrimary: true,
+                    isGenerated: true,
                     generationStrategy: "increment"
                   }, {
                     name: "title",
