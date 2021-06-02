@@ -26,6 +26,11 @@ docker exec -it [id] bash
 \c  # connect to database
 \dt # display table
 
+```
+
+## 创建数据库
+
+```bash
 # 创建数据库
 CREATE DATABASE blog_development ENCODING 'UTF8' LC_COLLATE 'en_US.utf8' LC_CTYPE 'en_US.utf8';
 CREATE DATABASE blog_production ENCODING 'UTF8' LC_COLLATE 'en_US.utf8' LC_CTYPE 'en_US.utf8';
@@ -42,10 +47,11 @@ yarn m:run
 yarn m:revert
 ```
 
-## 添加数据
+## 创建实体
 
-
-
+```bash
+yarn e:create -n <entityName>
+```
 
 
 
