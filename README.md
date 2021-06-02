@@ -13,6 +13,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## 启动数据库
 
 ```bash
+mkdir database
+
 docker run -v "PATH/database/":/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_USER=vino -e POSTGRES_HOST_AUTH_METHOD=trust -d postgres
 #PATH:项目根目录绝对路径(docker windows)
 
