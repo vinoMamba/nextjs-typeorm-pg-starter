@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.createPosts1622639664724 = void 0;
+exports.createPosts1622645715973 = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
@@ -17,12 +17,12 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var _typeorm = require("typeorm");
 
-var createPosts1622639664724 = /*#__PURE__*/function () {
-  function createPosts1622639664724() {
-    (0, _classCallCheck2["default"])(this, createPosts1622639664724);
+var createPosts1622645715973 = /*#__PURE__*/function () {
+  function createPosts1622645715973() {
+    (0, _classCallCheck2["default"])(this, createPosts1622645715973);
   }
 
-  (0, _createClass2["default"])(createPosts1622639664724, [{
+  (0, _createClass2["default"])(createPosts1622645715973, [{
     key: "up",
     value: function () {
       var _up = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee(queryRunner) {
@@ -45,6 +45,9 @@ var createPosts1622639664724 = /*#__PURE__*/function () {
                   }, {
                     name: "content",
                     type: "text"
+                  }, {
+                    name: "authorId",
+                    type: "int"
                   }]
                 }));
 
@@ -88,7 +91,7 @@ var createPosts1622639664724 = /*#__PURE__*/function () {
       return down;
     }()
   }]);
-  return createPosts1622639664724;
+  return createPosts1622645715973;
 }();
 
-exports.createPosts1622639664724 = createPosts1622639664724;
+exports.createPosts1622645715973 = createPosts1622645715973;
