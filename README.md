@@ -36,4 +36,8 @@ CREATE DATABASE blog_test ENCODING 'UTF8' LC_COLLATE 'en_US.utf8' LC_CTYPE 'en_U
 
 ```bash
 yarn m:create -n <tableName>
+# 表升级
+yarn m:run 
+# 表降级
+yarn m:revert
 ```
